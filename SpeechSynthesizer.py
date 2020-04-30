@@ -12,8 +12,8 @@ def Text2Speech(text, language):
         language = 'en'
     return gTTS(text=text, lang=language, slow=False)
 
-def PlayAudio(audio_file_path):
-    playsound(audio_file_path)
+def PlayAudio(audio_file_path, block=True):
+    playsound(audio_file_path, block=block)
 
 def SaveAudio(audio_file_path, audio):
     audio.save(audio_file_path)
