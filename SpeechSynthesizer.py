@@ -20,8 +20,8 @@ def SaveAudio(audio_file_path, audio):
 
 # Driver Code
 audio_file_path = "audio.mp3"
-text = "Hello"
-language = "ta"
+text = "Hello World"
+language = "en"
 
 audio = Text2Speech(text, language)
 SaveAudio(audio_file_path, audio)
