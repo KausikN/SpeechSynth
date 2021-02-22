@@ -19,10 +19,12 @@ def SaveAudio(audio_file_path, audio):
     audio.save(audio_file_path)
 
 # Driver Code
-audio_file_path = "audio.mp3"
-text = "Hello World"
+# Params
+audio_save_path = "wimbaway.mp3"
+text = "Lala kahle"
 language = "en"
+# Params
 
 audio = Text2Speech(text, language)
-SaveAudio(audio_file_path, audio)
-PlayAudio(audio_file_path)
+SaveAudio(audio_save_path, audio)
+PlayAudio(audio_save_path)
